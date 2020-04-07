@@ -5,6 +5,33 @@
     <meta charset="utf-8">
 
     <script>
+        function isItWeekendYet(jour){
+            switch (jour) {
+                case 'lundi' :
+                    return 'Hélas, non! C\'était hier';
+                    break;
+                case 'mardi' :
+                    return 'Hélas, non!';
+                    break;
+                case 'mercredi' :
+                    return 'Hélas, non ! Toujours pas !';
+                    break;
+                case 'jeudi' :
+                    return 'Hélas, non ! Mais bientôt !';
+                    break;
+                case 'vendredi' :
+                    return 'Oui !';
+                    break;
+                case 'samedi' :
+                    return 'Oui ! Profite bien !';
+                    break;
+                case 'dimanche' :
+                    return 'Oui ! Mais c\'est la fin !';
+                    break;
+                default :
+                    return 'Hélas, non ! Tu es sûr que ' + jour + ' est un jour qui existe ?'
+            }
+        }
     </script>
 
 </head>

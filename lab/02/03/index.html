@@ -5,6 +5,15 @@
     <meta charset="utf-8">
 
     <script>
+        function sequence(plage){
+            let resultat = 0;
+            for (let i = -plage; i <= plage; i++) {
+                if ((i % 2) === 0){
+                    resultat+=i**4;
+                }
+            }
+            return resultat;
+        }
     </script>
 
 </head>
